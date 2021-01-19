@@ -1,0 +1,135 @@
+.example-button-row {
+    display: table-cell;
+    width: 490px;
+ }
+ /* #logo{ 
+	position:fixed;
+	top:10px; 
+	left:10px; 
+}   */
+ .example-spacer {
+  flex: 0.90 1 auto;
+}
+  .example-flex-container {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+  }
+  .example-button-container {
+    display: inline-flexbox;
+    padding: 8px;
+    justify-content: right;
+    width: 19.8%;
+  }
+
+  .mat-mini-fab.mat-success,
+  .mat-raised-button.mat-success
+  {
+      background-color:#228b22;
+      color:ghostwhite;
+  }
+  .mat-mini-fab.mat-primary,
+  .mat-raised-button.mat-primary
+  {
+      background-color:rgb(175, 147, 6);
+      color:ghostwhite;
+  }
+  
+  .mat-raised-button.mat-success:active
+  {
+      color:black;
+  }
+  
+  .mat-mini-fab.mat-success:hover,
+  .mat-mini-fab.mat-primary:hover,
+  .mat-mini-fab.mat-accent:hover,
+  .mat-mini-fab.mat-warn:hover,
+  .mat-mini-fab.mat-success:active,
+  .mat-mini-fab.mat-primary:active,
+  .mat-mini-fab.mat-accent:active,
+  .mat-mini-fab.mat-warn:active
+  {
+    background-color:white;
+    color:black;
+}
+
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+.cls:hover{
+  font-weight: bold;
+}
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+h1.example-app-name {
+  margin-left: 8px;
+}
+
+.example-sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+  
+}
+
+.example-is-mobile .example-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 140px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #4CAF50;
+}
+#contact {
+  top: 200px;
+  background-color: #555
+}
+#recruiters {
+  top: 140px;
+  background-color: #f44336;
+}
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+
+

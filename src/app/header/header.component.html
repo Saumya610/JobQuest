@@ -1,0 +1,19 @@
+<div class="flex">
+    <div>
+      <!-- <router-outlet></router-outlet> -->
+      <img class="img-fluid" (click)="getimage()" src={{imagePath}}><br>
+      <br>
+    </div>
+    <div>
+      <mat-toolbar class="toolbar-background">
+        <a (click)='jobs()' mat-button>JOBS</a>
+        <a (click)='internships()' mat-button>INTERNSHIPS</a>
+        <a (click)='more()' mat-button>MORE</a>
+        <a (click)='aboutus()' mat-button>ABOUT US</a>
+        <a (click)='contactus()' mat-button>CONTACT US</a>
+        <a (click)='login()' mat-button>LOGIN</a>
+        <a (click)='signin()' mat-button>SIGN IN</a>
+      </mat-toolbar>
+      </div>
+  </div>
+  

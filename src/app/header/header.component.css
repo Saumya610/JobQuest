@@ -1,0 +1,15 @@
+.img-fluid {
+    max-width: 60% !important;
+    margin-left: 0% !important;
+    justify-content: right;
+  }
+  .flex {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding-right: 30%;
+  }
+  
+  .toolbar-background{
+    -moz-text-size-adjust: 30%;
+  }

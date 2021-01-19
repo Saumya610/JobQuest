@@ -1,0 +1,24 @@
+<p>login works!</p>
+
+
+ 
+    Email Id: <input [(ngModel)]='l.emailid'/><br/>   
+  <br/>Password: <input [(ngModel)]='l.password' /><br/>
+  
+  <br/>
+                
+  <br/><mat-radio-group >
+    <mat-radio-button *ngFor="let typ of types" [value]="typ">{{typ}}
+    </mat-radio-button>
+    </mat-radio-group>    
+    <br/>
+    <nav>
+     <br/>      
+    <p><a routerLink="/lmn" >Forgot your password?</a></p>
+          
+    </nav>
+      
+      <router-outlet> </router-outlet>
+        <br/><button (click)='submit()'>LogIn</button>
+       
+  <br/><p>{{lmn}}</p>

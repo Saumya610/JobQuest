@@ -1,0 +1,71 @@
+<h2>Job Seeker Application</h2>
+ 
+Name <input [(ngModel)]='s.fmname'/>  &nbsp;  <input [(ngModel)]='s.lname'/><br/>
+First Name              &nbsp;                          Last Name
+<br/>
+<br/>Current Address 
+<br/> <input [(ngModel)]='s.add1'/><br/>
+Address Line 1 
+<br/>
+<br/> <input [(ngModel)]='s.add2'/><br/>
+Address Line 2 
+<br/>
+<br/> <input [(ngModel)]='s.city'/>  &nbsp; <input [(ngModel)]='s.state'/><br/>
+City &nbsp; State / Province
+<br/>
+<br/> <input [(ngModel)]='s.zipcode'/>  &nbsp;  <input [(ngModel)]='s.country'/><br/>
+Postal / Zip Code &nbsp; Country
+<br/>
+<br/> <input [(ngModel)]='s.phoneno'/><br/>
+Phone Number
+<br/>
+<br/> <input [(ngModel)]='s.alterno'/><br/>
+Alternate Number
+<br/>
+<br/>Job Type
+<mat-form-field appearance="fill">
+  <mat-label>Enter Position</mat-label>
+  <mat-select [(ngModel)]='s.typ'>
+    <mat-option *ngFor="let typ of types" [value]="typ.value">{{typ.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<br/>Preferred Mode of Working 
+<mat-form-field appearance="fill">
+  <mat-label>Select</mat-label>
+  <mat-select [(ngModel)]='s.mod'>
+    <mat-option *ngFor="let mod of modes" [value]="mod.viewValue">{{mod.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<br/>Have you previously worked with us?
+<mat-form-field appearance="fill">
+  <mat-label>Select</mat-label>
+  <mat-select [(ngModel)]='s.choice'>
+    <mat-option *ngFor="let choice of choices" [value]="choice.viewValue">{{choice.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<br/>
+<br/>If yes, when?
+<br/> From : 
+  <mat-form-field>
+    <input matInput [(ngModel)]='s.from' [matDatepicker]="from" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="from"></mat-datepicker-toggle>
+    <mat-datepicker #from></mat-datepicker>
+  </mat-form-field>
+  <br/>
+  <br/>Till :
+  <mat-form-field>
+    <input matInput [(ngModel)]='s.till' [matDatepicker]="till" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="till"></mat-datepicker-toggle>
+    <mat-datepicker #till></mat-datepicker>
+  </mat-form-field>
+  <br/>
+  
+  <br/>Upload your CV<br/>
+  <br/><button (click)='submit()'>Submit Application</button><br/>
+  <br/>
+  

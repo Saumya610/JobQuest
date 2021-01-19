@@ -1,0 +1,49 @@
+<h2>Home </h2>
+
+  <mat-card class="example-card">
+    
+    <mat-card-header>
+    <mat-card-title style="text-align: center;">Advanced Search</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions class="search-options">
+      <form class="example-form">
+        <input type="text"
+               placeholder="Search by Designation"
+               [formControl]="control"
+               [matAutocomplete]="desigauto">
+        <mat-autocomplete #desigauto="matAutocomplete">
+          <mat-option *ngFor="let desig of designations | async" [value]="desig">
+            {{desig}}
+          </mat-option>
+        </mat-autocomplete>
+        <input type="text"
+               placeholder="Search by Location"
+               [formControl]="control"
+               [matAutocomplete]="locauto">
+        <mat-autocomplete #locauto="matAutocomplete">
+          <mat-option *ngFor="let loc of locations | async" [value]="loc">
+            {{loc}}
+          </mat-option>
+        </mat-autocomplete>
+        <input type="text"
+               placeholder="Search by Experience"
+               [formControl]="control"
+               [matAutocomplete]="expauto">
+        <mat-autocomplete #expauto="matAutocomplete">
+          <mat-option *ngFor="let exp of experiences | async" [value]="exp">
+            {{exp}}
+          </mat-option>
+        </mat-autocomplete>
+      </form>
+      <button mat-button color="basic">Search All Jobs</button>
+    </mat-card-actions>
+  </mat-card>
+  <br/>
+  <ul>
+  <li><a href="">Jobs by Comapny</a></li><br>
+  <li><a href="">Jobs by Courses</a></li><br>
+  <li><a href="">Jobs by Roles</a></li><br>
+  <li><a href="">Work from Jobs</a></li><br>
+  <li><a href="">Full-time/Part-time Jobs</a></li>
+  </ul>
+  

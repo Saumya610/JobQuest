@@ -1,0 +1,65 @@
+<!-- <p>jobseekafterlogin works!</p> -->
+<mat-toolbar>
+    <div id="logo"> 
+        <img src=""> 
+    </div>
+    <div class="example-container" [class.example-is-mobile]="mobileQuery.matches" >
+        <mat-toolbar color="primary" class="example-toolbar">
+    <span class="example-spacer"></span>
+    <div class="example-button-row">
+        <div class="example-flex-container">
+            <div class="example-button-container">
+               <a><button (click)='gotohome()' mat-mini-fab color="primary" aria-label="home icon">
+                <mat-icon >home</mat-icon>
+                </button> Home</a>
+            </div>
+            <div class="example-button-container">
+                <a><button (click)='xyz()' mat-mini-fab color="accent" mat-button aria-label="jobs listing icon">
+                <mat-icon >business_center</mat-icon>
+                </button> Jobs</a>
+            </div>
+            <div class="example-button-container">
+                <a><button (click)='jkl()' mat-mini-fab color="warn" aria-label="jobs applied icon">
+                <mat-icon>turned_in</mat-icon>
+                </button> My Jobs</a>
+            </div>
+            <div class="example-button-container">
+                <a><button mat-mini-fab color="success" mat-button [matMenuTriggerFor]="menu" aria-label="jobs listing icon">
+                    <mat-icon>person</mat-icon>
+                 </button> My Profile</a>
+                 <mat-menu #menu="matMenu">
+                     <button mat-menu-item [matMenuTriggerFor]="name"><b>Saumya Agarwal</b></button>
+                     <mat-divider></mat-divider>
+                     <button mat-menu-item [matMenuTriggerFor]="settings">Account Settings</button>
+                     <mat-divider></mat-divider>
+                     <a href="https://www.yahoo.com/" mat-menu-item class="cls">Job Posting Account</a>
+                     <button mat-menu-item>
+                     <a mat-raised-button color="success" href="https://www.google.com/" target="_blank">Logout</a>
+                     </button>
+                 </mat-menu>
+                 <mat-menu #name="matMenu">
+                     <button mat-menu-item class="cls">View Profile</button>
+                 </mat-menu>
+                 <mat-menu #settings="matMenu">
+                     <button mat-menu-item class="cls">Change Password</button>
+                     <mat-divider></mat-divider>
+                     <button mat-menu-item class="cls">Deactivate Account</button>
+                     <mat-divider></mat-divider>
+                     <button mat-menu-item class="cls">Delete Account</button>
+                 </mat-menu> 
+                 </div>     
+        </div>  
+    </div>              
+  </mat-toolbar>
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <a href="#" id="about">About Us</a>
+    <a href="#" id="contact">Contact Us</a>
+    <a href="#" id="recruiters">Recruiters List</a>
+    <a href="#" id="blog">Blog</a>
+  </div>
+  
+      
+
+
+
